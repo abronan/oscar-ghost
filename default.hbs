@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <link href="//gmpg.org/xfn/11" rel="profile">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True" />
@@ -13,22 +14,36 @@
     <meta name="description" content="{{meta_description}}" />
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="{{asset 'css/prism.css'}}">
+    <link rel="stylesheet" type="text/css" href="{{asset 'css/github.css'}}">
     <link rel="stylesheet" type="text/css" href="{{asset 'css/poole.css'}}">
-    <link rel="stylesheet" type="text/css" href="{{asset 'css/icon.css'}}">
+    <link rel="stylesheet" type="text/css" href="{{asset 'css/icomoon.css'}}">
     <link rel="stylesheet" type="text/css" href="{{asset 'css/syntax.css'}}">
     <link rel="stylesheet" type="text/css" href="{{asset 'css/oscar.css'}}">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:100,300,300italic">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <style type='text/css'>
+        pre,
+        code {
+            white-space: pre;
+            overflow-x: scroll;
+        }
+
+        .hljs {
+            width: 2500px;
+            display: inline-block;
+            overflow-x: scroll;
+            padding: 0.5em;
+            padding-right: 100%;
+            -webkit-text-size-adjust: none;
+        }
+    </style>
 
     <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{asset "apple-touch-icon-precomposed.png"}}">
-    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{asset " apple-touch-icon-precomposed.png "}}">
+    <link rel="shortcut icon" href="{{asset " favicon.ico "}}"> {{! Ghost outputs important style and meta data with this tag }} {{ghost_head}}
+</head>
 
-    {{! Ghost outputs important style and meta data with this tag }}
-    {{ghost_head}}
-  </head>
-
-  <body class="{{body_class}}">
+<body class="{{body_class}}">
 
     <div class="masthead">
         <div class="container">
@@ -47,9 +62,12 @@
 
     <script type="text/javascript" data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script type="text/javascript" src="{{asset 'js/gallery.js'}}"></script>
-    <script type="text/javascript" src="{{asset 'js/prism.js'}}"></script>
+    <script type="text/javascript" src="{{asset 'js/highlight.pack.js'}}"></script>
     <script type="text/javascript" src="{{asset 'js/oscar.js'}}" data-cfasync="false"></script>
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
-  </body>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    {{! Ghost outputs important scripts and data with this tag }} {{ghost_foot}}
+</body>
+
 </html>

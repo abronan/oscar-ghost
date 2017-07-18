@@ -25,11 +25,11 @@ body {
 }
 
 html {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-family: 'Muli', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-family: 'Muli', Helvetica, Arial, sans-serif;
   color: #313131;
   letter-spacing: -.025rem;
 }
@@ -76,12 +76,15 @@ h1, h2, h3, h4, h5, h6 {
  * Super small header above the content for site name and short description.
  */
 
- .masthead {
+.masthead {
   padding-top:    0.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #eee;
   display: inline-block;
   width: 100%;
+}
+.masthead:hover {
+  background-color: #f9f9f9;
 }
 .masthead-title {
   margin-top: 0;
