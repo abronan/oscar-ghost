@@ -16,20 +16,9 @@
       {{/if}}
   </header>
 
-
-  {{#has tag="gallery"}}
-    {{> photoswipe}}
-    <section class="post-content post-gallery">
+  <section class="post-content">
     {{content}}
-    </section>
-    <link rel="stylesheet" href="{{asset "css/photoswipe.css"}}">
-    <script type="text/javascript" src="{{asset "js/photoswipe.min.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/photoswipe-ui-default.min.js"}}"></script>
-  {{else}}
-    <section class="post-content">
-      {{content}}
-    </section>
-  {{/has}}
+  </section>
 
   <footer class="post-footer">
         <div class="more-posts">

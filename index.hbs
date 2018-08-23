@@ -8,16 +8,13 @@
           </h1>
           <section class="post-meta">
               <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
-              {{#has tag="gallery"}}<i class="header-icon icon-image"></i>{{/has}}
               <span class="tags">{{tags}}</span>
           </section>
       </header>
       <a class="read-more" href="{{url}}">
-      {{^has tag="gallery"}}
         <section class="post-excerpt">
             <p>{{excerpt words="30"}}...</p>
         </section>
-      {{/has}}
       </a>
   </article>
   {{/foreach}}

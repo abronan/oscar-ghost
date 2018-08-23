@@ -61,12 +61,12 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 38em) {
   .container {
     max-width: 32rem;
-}
+  }
 }
 @media (min-width: 56em) {
   .container {
     max-width: 38rem;
-}
+  }
 }
 
 
@@ -165,7 +165,8 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
 }
-/*******Navigation*********/
+
+/******* Navigation *********/
 .nav.animated{
     display: none;
 }
@@ -218,6 +219,14 @@ a.nav-item{
   cursor: pointer;
 }
 
+.kg-width-wide img {
+  max-width: 85vw;
+}
+
+.kg-width-full img {
+  max-width: 100vw;
+}
+
 /* Blog post or page title */
 .page-title,
 .post-title,
@@ -245,7 +254,7 @@ i.header-icon {
   color: #9a9a9a;
 }
 
-/*************Tags**************/
+/************ Tags *************/
 
 .tags{
   color: white;
@@ -555,7 +564,7 @@ a.pagination-item:hover {
 
 /* Turn off meta for page2+ to make room for extra
 pagination prev/next links */
-.archive-template .author-profile .author-meta {
+.paged .author-profile .author-meta {
     display: none;
 }
 
